@@ -31,7 +31,7 @@ function App() {
         selectedImages.map(async (image) => {
           const formData = new FormData();
           formData.append('files', image);
-          const response = await axios.post('http://localhost:8000/extract', formData, {
+          const response = await axios.post('https://ocr-3-9gmv.onrender.com/extract', formData, {
             headers: {
               'Content-Type': 'multipart/form-data',
             },
